@@ -1,0 +1,2 @@
+{ "_id" : { "$oid" : "5cad25d9dbaf04ca5104edbc" }, "topic" : "When will we get the midterm grade back?", "author" : "Kumar" }
+{ "_id" : { "$oid" : "5cad25ffdbaf04ca5104edbd" }, "topic" : "Do I need to submit a video with my slides?", "author" : "Matt" }

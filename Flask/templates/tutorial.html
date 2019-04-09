@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+    {% block title %}{{ tutorial["title"] }}{% endblock %}
+{% block body %}
+<h1>{{ tutorial["title"] }}</h1>
+<h3><a href="{{ url_for('tutorials') }}">Back</a> </h3>
+<h3>Views: {{ tutorial["num_views"]|int }}</h3>
+    {{ tutorial["content"] }}
+{% endblock %}
+

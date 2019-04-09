@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+    {% block title %}Forum Page{% endblock %}
+{% block body %}
+<ul>
+    {% for thread in threads %}
+        <li><a href="{{ url_for('see_thread', thread_id=thread["_id"]) }}"> {{ thread["topic"] }} </a></li>
+    {% endfor %}
+</ul>
+{% endblock %}

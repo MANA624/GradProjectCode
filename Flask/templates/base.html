@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>{% block title %}Title{% endblock %}</title>
+</head>
+<body style="background-color:powderblue;">
+
+<table cellpadding="20px">
+    <tr>
+        <td>Welcome to my site!!</td>
+        <td><a href="{{ url_for('index') }}">Home</a> </td>
+        <td><a href="{{ url_for('tutorials') }}">Tutorials</a></td>
+        <td><a href="{{ url_for('forum') }}">Forum</a></td>
+    </tr>
+</table>
+
+{% block body %}
+{% endblock %}
+
+</body>
+</html>
