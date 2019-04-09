@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ thread.topic }}{% endblock %}
+
+{% block body %}
+<a href="{% url 'forum:index' %}">Back</a><br/>
+
+<h1>{{ thread }}</h1>
+
+{% for post in thread.response_set.all %}
+    <b>{{ post.author }}: </b>{{ post.content }}<br>
+{% endfor %}
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+    {% block title %}Tutorial Page{% endblock %}
+{% block body %}
+<ul>
+    {% for tutorial in tutorials %}
+        <li><a href="{% url 'tutorials:see_tutorial' tutorial.id %}"> {{ tutorial }} </li>
+    {% endfor %}
+</ul>
+{% endblock %}
+

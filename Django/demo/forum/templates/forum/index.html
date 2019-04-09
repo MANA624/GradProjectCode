@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+    {% block title %}Forum Page{% endblock %}
+{% block body %}
+<ul>
+    {% for thread in threads %}
+    <li><a href="{% url 'forum:see_thread' thread.id %}"> {{ thread }} </a></li>
+    {% endfor %}
+</ul>
+{% endblock %}
