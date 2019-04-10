@@ -48,7 +48,6 @@ def forum():
     posts = []
     for post in threads.find():
         posts.append(post)
-    print(posts)
     return render_template("forums.html", threads=posts)
 
 
@@ -63,8 +62,6 @@ def see_thread(thread_id):
             response_list.append(response)
     except UndefinedError:
         return "You found the wrong page!"
-    print(response_list)
-    print(thread)
     return render_template("thread.html", thread=thread, posts=response_list)
 
 if __name__ == '__main__':
